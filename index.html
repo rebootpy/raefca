@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--Favicon-->
+	<link rel="icon" type="image/x-icon" href="assets/img/logo b.png">
+	<!--Estilos Generales-->
+	<link rel="stylesheet" href="assets/css/index.css">
+	<!-- =============== IONICONS ============== -->
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+	<!--AOS JS-->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<title>Raefca | Sitio Web Oficial</title>
+</head>
+<body>	<!--NavToggle-->
+	<header class="header">
+		<a href="/" class="header__logo">Raefca</a>
+
+		<!-- Icon the manuBurger -->
+		<ion-icon name="menu-outline" class="header__toggle" id="nav-toggle"></ion-icon>
+
+		<nav class="nav" id="nav-menu">
+			<div class="nav__content bd-grid">
+				<!-- icon the menuClose -->
+				<ion-icon name="close-outline" class="nav__close" id="nav-close"></ion-icon>
+
+				<div class="nav__perfil">
+					<div class="nav__img">
+						<img src="assets/img/logo_actualizado2.png" alt="">
+					</div>
+
+					<div>
+						<a href="#" class="nav__name">Raefca</a>
+						<span nav__profesion>Web Inmobiliaría</span>
+					</div>
+				</div>
+				<div class="nav__menu">
+					<ul class="nav__list">
+						<li class="nav__item"><a href="#" class="nav__link active">Inicio</a></li>
+						<li class="nav__item"><a href="#" class="nav__link">Servicios</a></li>
+						<li class="nav__item"><a href="#" class="nav__link">Galeria</a></li>
+						<li class="nav__item"><a href="contacto" class="nav__link">Contacto</a></li>
+					</ul>
+				</div>
+				<div class="nav__social">
+					<a href="#" class="nav__social-icon">
+						<ion-icon name="logo-linkedin"></ion-icon>
+					</a>
+					<a href="#" class="nav__social-icon">
+						<ion-icon name="logo-github"></ion-icon>
+					</a>
+					<a href="#" class="nav__social-icon">
+						<ion-icon name="logo-instagram"></ion-icon>
+					</a>
+				</div>
+			</div>
+
+		</nav>
+	</header>
+	<!--Landing Pages-->
+	<div class="background__Position">
+		<div class="Creacion">
+			<div class="text">
+				<div data-aos="fade-right">
+					<h1>Bienvenido</h1>
+					<p>En este sitio web podras encontrar nuestros servicios y testimonios de nuestro trabajo que hemos realizado por años</p>
+					<div class="comenzar">
+						<a href="/"><ion-icon name="arrow-forward"></ion-icon><p>COMENZAR</p></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.84,59.72 C248.02,235.38 349.03,-0.47 502.54,125.83 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div>
+	</div>
+
+	<!--Comenzar-->
+	<div class="home">
+		<div class="align">
+			<div class="titulo">
+				<div data-aos="fade-up-right">
+					<h1>¿Quienes Somos?</h1>
+				</div>
+			</div>
+			
+			<div data-aos="fade-up">
+				<div class="parrafo">
+					<div class="username">
+						<i class="fas fa-user-circle"></i>
+						<div class="info">
+							<p>Raefca - <span>Seguir</span></p>
+						</div>
+					</div>
+					<div class="activo">
+						<p>1d </p>
+						<i class="fas fa-globe-americas"></i>
+					</div>
+					<p>Más que una empresa, somos familia; comprometidos con la satisfacción de cada uno de nuestros clientes, haciendo de nuestro trabajo algo nuevo e innovador.</p>
+					<div class="likes">
+						<i class="far fa-heart"></i>
+						<i class="far fa-comment-alt"></i>
+						<i class="far fa-share-all"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.84,59.72 C248.02,235.38 349.03,-0.47 502.54,125.83 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #D4F5F5;"></path></svg></div>
+	</div>
+
+	<!--JS-->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript">
+
+
+		const navMenu = document.getElementById('nav-menu');
+		const toggleMenu = document.getElementById('nav-toggle');
+		const closeMenu = document.getElementById('nav-close');
+
+		/* SHOW */
+		toggleMenu.addEventListener('click', () => {
+			navMenu.classList.toggle('show');
+		});
+
+		/* HIDDEN */
+		closeMenu.addEventListener('click', () => {
+			navMenu.classList.remove('show');
+		});
+
+		/* ======= ACTIVE AND REMOVE MENU ======= */
+		const navLink = document.querySelectorAll('.nav__link');
+
+		function linkAction() {
+    // Active link
+    navLink.forEach(n => n.classList.remove('active'));
+    this.classList.add('active');
+
+    // Remove menu mobile
+    navMenu.classList.remove('show')
+}
+
+navLink.forEach(n => n.addEventListener('click', linkAction));
+</script>
+<!--AOS JS-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+	AOS.init();
+</script>
+<!--SVG-->
+<!--Background-->
+<div class="background-img">
+	<div class="parrax-center">
+		<div data-aos="fade-up">
+			<h1>¿No sabes donde obtener más información?</h1>
+			<p>No te preocupes en <span>RAEFCA
+
+			</span> tenemos una variedad de formas para comunicarte. En esta pagina estan los botones a los cuales puedes acudir para más información.</p>
+		</div>
+		<div class="icons">
+			<div data-aos="fade-right">
+				<a onselectstart="return false" class="btnface" href="https://www.facebook.com/Raefca-102585048466922/" id="one"><i class="fab fa-facebook-f"></i></a>
+			</div>
+			<div data-aos="fade-up">
+				<a class="btnwhat" href="https://api.whatsapp.com/send?phone=+525630598040" id="two"><i class="fab fa-whatsapp"></i></a>
+			</div>
+			<div data-aos="fade-right">
+				<a class="btnemail" href="mailto:angel8aibarracontratista.27@gmail.com" id="tree"><i class="far fa-envelope"></i></a>
+			</div>
+		</div>
+	</div>
+	<div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.84,59.72 C248.02,235.38 349.03,-0.47 502.54,125.83 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #FFD046;"></path></svg></div>
+</div>
+<div class="conoce">
+	<h1>Conoce nuestros servicios</h1>
+	<a href="servicios">Servicios<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script></a>
+	<div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.84,59.72 C248.02,235.38 349.03,-0.47 502.54,125.83 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div>
+</div>
+<div id="united-main">
+	<div class="imaginet-main">
+		<div id="main-container">
+			<div data-aos="fade-right">
+				<table>
+					<thead>
+
+						<tr>
+							<th>Día</th><th>Horario</th>
+						</tr>
+					</thead>
+
+					<tr>
+						<td>Lunes</td><td>9:00-19:00</td>
+					</tr>
+					<tr>
+						<td>Martes</td><td>9:00-19:00</td>
+					</tr>
+					<tr>
+						<td>Miercoles</td><td>9:00-19:00</td>
+					</tr>
+					<tr>
+						<td>Jueves</td><td>9:00-19:00</td>
+					</tr>
+					<tr>
+						<td>Viernes</td><td>9:00-19:00</td>
+					</tr>
+					<tr>
+						<td>Sabado</td><td>9:00-19:00</td>
+					</tr>
+					<tr>
+						<td>Domingo</td><td>CERRADO</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div data-aos="fade-up">
+			<div class="location_iframe">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1883.2735759654797!2d-98.916172343888!3d19.258557986983398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDE1JzMwLjgiTiA5OMKwNTQnNTQuMyJX!5e0!3m2!1ses-419!2smx!4v1610740794477!5m2!1ses-419!2smx" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			</div>
+		</div>
+	</div>
+	<div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.84,59.72 C248.02,235.38 349.03,-0.47 502.54,125.83 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #F5DD90;"></path></svg></div>
+</div>
+<!--TESTIMONIOS-->
+<div data-aos="fade-up">
+	<div class="testimonios">
+
+		<h1>Testimonios</h1>
+		<div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.84,59.72 C248.02,235.38 349.03,-0.47 502.54,125.83 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div>
+	</div>
+</div>
+	<div class="propiedad">
+		<div data-aos="fade-up">
+		<div class="cuadro">
+		<div class="alineacion_cuadro">
+			<div class="juntos">
+				<div class="imagen">
+				<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fw7.pngwing.com%2Fpngs%2F831%2F88%2Fpng-transparent-user-profile-computer-icons-user-interface-mystique-miscellaneous-user-interface-design-smile.png&f=1&nofb=1" alt="">
+			</div>
+			<div class="nombre">
+				<h1>Eduardo A.</h1>
+			</div>
+			</div>
+			<div class="texto">
+				<p>Excelente servicio y variedad de ello, recomendable.</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div data-aos="fade-up">
+	<div class="cuadro">
+		<div class="alineacion_cuadro">
+			<div class="juntos">
+				<div class="imagen">
+				<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fw7.pngwing.com%2Fpngs%2F831%2F88%2Fpng-transparent-user-profile-computer-icons-user-interface-mystique-miscellaneous-user-interface-design-smile.png&f=1&nofb=1" alt="">
+			</div>
+			<div class="nombre">
+				<h1>Alfredo Valencia</h1>
+			</div>
+			</div>
+			<div class="texto">
+				<p>Excelente servicio y variedad de ello, recomendable.</p>
+			</div>
+		</div>
+	</div>
+</div>
+	</div>
+<!--FOOTER-->
+	<div class="footer">
+		<footer>
+			<div class="skills__box">
+				<h1>Raefca</h1>
+				<p>Es una empresa inmobiliaria que lleva 60 años de experiencia, donde todo lo imposible lo hacemos una realidad.</p>
+			</div>
+			<div class="skills__box">
+				<ul>
+					<li>Servicios</li>
+					<li>Galeria</li>
+					<li>Contacto</li>
+				</ul>
+			</div>
+			<div class="skills__box">
+				<a href="#">Facebook</a>
+				<a href="#">WhatsApp</a>
+				<a href="#">Correo Electronico</a>
+			</div>
+		</footer>
+	</div>
+
+	<div class="whatsapp">
+      <a target="_blanck" href="https://wa.me/+525630598040">
+        <ion-icon name="logo-whatsapp" role="img" class="md hydrated" aria-label="logo whatsapp"></ion-icon>
+      </a>
+    </div>
+</body>
+</html>

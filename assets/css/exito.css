@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto Flex', sans-serif;
+}
+
+body {
+	background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.elegantthemes.com%2Fblog%2Fwp-content%2Fuploads%2F2013%2F09%2Fbg-10-full.jpg&f=1&nofb=1);
+}
+
+.Ventana__Exited {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.Aling__Ve {
+	margin: 20px;
+	padding-top: 100px;
+}
+.alineacion {
+	text-align: center;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #09E85E;
+}
+.icono {
+	margin-bottom: 20px;
+	text-align: center;
+	margin-left: 190px;
+}
+.background {
+	border-radius: 50%;
+	background-color: #fff;
+	width: 55px;
+}
+ion-icon {
+	text-align: center;
+	font-size: 50px;
+}
+.alineacion h1 {
+	margin-bottom: 10px;
+}
+.alineacion span {
+	margin-bottom: 20px;
+}
+ a {
+ 	text-transform: uppercase;
+ 	padding-top: 20px;
+ 	padding-bottom: 20px;
+ 	margin-left: 20px;
+ 	margin-right: 20px;
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+	background-color: red;
+	text-decoration: none;
+	color: #fff;
+	margin-top: 20px;
+}

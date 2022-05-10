@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="assets/css/contacto.css">
+	<title>Contacto RAEFCA</title>
+</head>
+<body>
+	<div class="Logo__Header">
+		<div class="Imantacc__copp">
+			<h1 style="color: #000;">SOPORTE RAEFCA</h1>
+		</div>
+	</div>
+	<!--FORMULARIO-->
+	<div class="Formulario__Alineacion">
+		<div class="Padding_Formulario">
+			<div class="Titulo">
+				<h1>CONTACTO</h1>
+				<p>Si tienes alguna duda, aclaración o quieres cotizar algún servicio llena el siguiente formulario y nos pondremos en contacto contigo.</p>
+			</div>
+			<form action="validacion-raefca.php" method="POST">
+				<label for="name">Nombre Completo:</label>
+				<input type="text" name="nombre" required placeholder="Example: Juan Fernando G.">
+				<br>
+				<label for="mail">Correo Electronico:</label>
+				<input type="mail" name="mail" required placeholder="example@example.com">
+				<br>
+				<label for="number">Número de Contacto:</label>
+				<input type="number" name="numero" required placeholder="+52 5690646478">
+				<br>
+				<label for="cotizacion">Tipo de Cotización:</label>
+				<input type="text" name="cotizacion" required class="cotizacion" placeholder="*Agrega el Nombre*">
+				<p>Si no sabes el tipo de cotización <a href="#">Solicitala aquí</a></p>
+				<button type="submit">Enviar</button>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
