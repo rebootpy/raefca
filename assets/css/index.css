@@ -428,7 +428,6 @@ img{
 }
 
 table{
-    margin: 40px;
     border-radius: 20px;
     box-shadow: 5px 3px 2px 1px rgba(0, 0, 0, 0.2);
     background-color: white;
@@ -631,7 +630,7 @@ footer a {
     text-align: center;
 }
 .cuadro {
-    width: 400px;
+    width: 200px;
     padding-left: 50px;
     padding-bottom: 20px;
     padding-top: 50px;
