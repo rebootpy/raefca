@@ -587,7 +587,7 @@ footer a {
 .whatsapp {
   position: fixed;
   bottom: 2rem;
-  right: 2rem;
+  right: 10rem;
   width: 5.4rem;
   height: 5.4rem;
   display: flex;
