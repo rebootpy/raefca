@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+body {
+	background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.elegantthemes.com%2Fblog%2Fwp-content%2Fuploads%2F2013%2F09%2Fbg-10-full.jpg&f=1&nofb=1);
+	}
+.Logo__Header {
+	background-color: #F4E409;
+	max-width: 100%;
+}
+.Imantacc__copp {
+	letter-spacing: 2px;
+	font-family: arial;
+	text-transform: uppercase;
+	text-align: center;
+}
+.Formulario__Alineacion {
+	padding: 50px;
+}
+.Padding_Formulario {
+	border-radius: 10px;
+	background-color: #fff;
+	padding: 10px;
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.Titulo h1{
+	text-align: center;
+	font-family: arial;
+	color: rgba(0,0,0,0.6);
+}
+.Titulo p{
+	font-family: 'Roboto Flex', sans-serif;
+	text-align: justify;
+	font-size: 12px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 20px;
+}
+form {
+	padding-left: 13px;
+	padding-right: 10px;
+}
+form label {
+	font-family: 'Roboto Flex', sans-serif;
+}
+form input {
+	font-family: 'Roboto Flex', sans-serif;
+	margin-bottom: 20px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	width: 100%;
+}
+form p {
+	font-family: 'Roboto Flex', sans-serif;
+	padding-bottom: 10px;
+}
+form button {
+	background-color: #F4E409;
+	border: none;
+	width: 100%;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
