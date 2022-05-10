@@ -586,7 +586,7 @@ footer a {
 .whatsapp {
   position: fixed;
   bottom: 2rem;
-  right: 5rem;
+  right: 3rem;
   width: 5.4rem;
   height: 5.4rem;
   display: flex;
@@ -630,8 +630,8 @@ footer a {
     text-align: center;
 }
 .cuadro {
-    width: 200px;
-    padding-left: 50px;
+    width: 100%;
+    padding-left: 10px;
     padding-bottom: 20px;
     padding-top: 50px;
 }
