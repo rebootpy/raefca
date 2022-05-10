@@ -411,8 +411,7 @@ img{
 .imaginet-main{
     margin: 0px;
     padding: 0px;
-    display: grid;
-    grid-template-columns: repeat(2, 500px);
+    
 }
 .imaginet-main iframe{
     margin-right: 0;
