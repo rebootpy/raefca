@@ -329,12 +329,13 @@ img{
 		padding-top: 0px;
 	}
 	.Landingg__Pages h1, p {
+        font-size: 20px;
 		text-align: center;
 	}
 	.Landingg__Pages img {
         margin-top: 30px;
 		width: 200px;
-		height: 30vh;
+		height: 25vh;
 		margin-left: 100px;
 	}
 	.primera {
@@ -342,7 +343,16 @@ img{
 	grid-template-columns: 400px;
 }
 }
-
+@media screen and (max-width: 600px) {
+    .Landingg__Pages h1, p {
+        width: 300px;
+        text-align: left;
+        padding-left: 50px;
+    }
+    .Landingg__Pages .alineacionfacha a {
+    margin-left: 50px;
+}
+}
 .Contenido__PAGES {
     display: flex;
     text-align: center;
@@ -351,7 +361,6 @@ img{
     padding: 50px;
 }
 .Grid_Templace {
-    padding: 20px;
     display: grid;
     grid-template-columns: 350px 350px 350px;
 }
@@ -405,6 +414,9 @@ img{
 }
 }
 @media screen and (max-width: 800px) {
+    .Contenido__PAGES {
+        padding: 0;
+    }
     .Grid_Templace {
         grid-template-columns: 350px 300px;
     }
@@ -509,10 +521,10 @@ footer a {
 
 @media screen and (max-width: 600px) {
     .footer_pages {
-        padding: 30px;
+        padding: 10px;
     }
     footer {
-        grid-template-columns: 400px;
+        grid-template-columns: 200px;
     }
     footer p {
         text-align: justify;
