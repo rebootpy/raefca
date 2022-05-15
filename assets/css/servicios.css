@@ -496,7 +496,7 @@ footer {
     grid-template-columns: 400px 350px 350px;
 }
 footer h1 {
-    color: rgba(0,0,0,0.5);
+    color: #fff;
     font-size: 20px;
 }
 footer p {
